@@ -1,3 +1,5 @@
+# Latest access update: see README-v7.1-TH.md (PIN-first + Passkey, no SQL changes).
+
 # Pregnant Manager Pro v7 — Pastel Atelier (GitHub Pages + Supabase)
 
 ## อัปเดตฟีเจอร์

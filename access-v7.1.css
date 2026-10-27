@@ -1,0 +1,73 @@
+/* v7.1 Family Access — responsive, pastel; intentionally loads after v7-ui.css */
+.pmp-auth-screen,.pmp-pin-screen{background:radial-gradient(circle at 12% 9%,#fce9f0 0,transparent 38%),radial-gradient(circle at 91% 92%,#e5f2ed 0,transparent 43%),#fbfaf8;padding:24px 12px 34px}
+.pmp-auth-card,.pmp-pin-card{max-width:460px;border-radius:32px!important;border:1px solid #efe5ec!important;box-shadow:0 24px 85px #8d738e23!important;background:linear-gradient(155deg,#fffefd,#fffaff)!important;padding:29px 28px!important}
+.pmp-auth-illustration{position:relative;margin:0 auto 14px;width:100px;height:95px;border-radius:45px 45px 34px 34px;background:linear-gradient(130deg,#fce4ee,#eaeafe);display:grid;place-items:center;box-shadow:0 12px 25px #cb9db234}
+.pmp-auth-illustration span{font-family:Georgia,serif;color:#b88da9;font-size:69px;line-height:1}
+.pmp-auth-illustration i{font-style:normal;position:absolute;right:-13px;top:-11px;font-size:36px;color:#b6cfbf}
+.pmp-auth-title{text-align:center;letter-spacing:-.8px;font-weight:700;font-size:29px;line-height:1.4;margin:10px 0}
+.pmp-auth-title em{font-style:normal;color:#b67f9e}
+.pmp-auth-sub{text-align:center;font-size:12px;line-height:1.85;color:#89909b;margin:0 auto 20px;max-width:330px}
+.pmp-passkey-main{width:100%;min-height:53px;background:linear-gradient(110deg,#8eaa9d,#769f99)!important;border:1px solid #779b8f!important;border-radius:17px!important;font-size:13px!important;box-shadow:0 10px 20px #8cae9c33;display:flex;justify-content:center;align-items:center;gap:9px}
+.pmp-passkey-main svg{width:21px;height:21px}
+.pmp-auth-hint{text-align:center;font-size:10px;color:#91a2a3;margin:10px 0 18px}
+.pmp-email-details{border:1px solid #ede7ee;border-radius:16px;margin:16px 0 10px;overflow:hidden;background:#fff}
+.pmp-email-details>summary{padding:16px;cursor:pointer;display:flex;align-items:center;gap:9px;color:#7f7e90;font-size:12px;font-weight:600;list-style:none}
+.pmp-email-details>summary::-webkit-details-marker{display:none}
+.pmp-email-details>summary svg{width:17px;height:17px;color:#9a91b4}
+.pmp-email-details[open]>summary{border-bottom:1px solid #f4edf1}
+.pmp-email-details .tabs,.pmp-email-details #authForm{margin-left:15px;margin-right:15px}
+.pmp-email-details #authForm{padding-bottom:16px}
+.pmp-demo-link{display:flex;align-items:center;justify-content:center;gap:7px;border:0;background:none;width:100%;color:#ab91a8;font-size:11px;min-height:40px;cursor:pointer}
+.pmp-demo-link svg{height:15px;width:15px}
+.pmp-safety-note{display:flex;justify-content:center;align-items:center;gap:7px;color:#9aa9a1;font-size:10px;line-height:1.65;text-align:center;margin-top:12px}
+.pmp-safety-note svg{height:15px;width:15px;flex:none}
+.pmp-pin-screen{min-height:100svh}
+.pmp-pin-mark{display:grid;place-items:center;margin:0 auto 13px;width:58px;height:58px;border-radius:20px;background:linear-gradient(130deg,#ffeaf2,#eeecfb);color:#a580a0}
+.pmp-pin-mark svg{width:30px;height:30px}
+.pmp-pin-title{font-size:26px;line-height:1.4;text-align:center;color:#64647b;margin:8px 0 7px;font-weight:700}
+.pmp-pin-title span{color:#cc99b2}
+.pmp-pin-lead{text-align:center;color:#9895a5;font-size:11px;line-height:1.8;max-width:310px;margin:0 auto}
+.pmp-profile-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0 18px}
+.pmp-profile-choice{border:1.5px solid #f1e3ea;border-radius:19px;background:linear-gradient(140deg,#fff3f8,#fffafd);padding:13px 10px;min-width:0;display:grid;justify-items:center;gap:3px;color:#92758c;cursor:pointer;transition:.2s ease}
+.pmp-profile-choice:hover{transform:translateY(-1px)}
+.pmp-profile-choice:focus-visible,.pmp-keypad button:focus-visible{outline:3px solid #9a84ae;outline-offset:2px}
+.pmp-profile-choice.selected{border-color:#c68bac;box-shadow:0 0 0 3px #e7c6d540}
+.pmp-profile-choice b{font-size:14px;color:#846681}
+.pmp-profile-choice small{font-size:10px;color:#b49bab}
+.pmp-profile-icon{width:40px;height:40px;border-radius:15px;display:grid;place-items:center;background:#ffe7f0}
+.pmp-profile-icon svg{height:24px;width:24px}
+.pmp-profile-dad{background:linear-gradient(135deg,#edf4ff,#fafcff);border-color:#e3edf9;color:#779bc1}
+.pmp-profile-dad.selected{border-color:#8daed0;box-shadow:0 0 0 3px #adc7ea48}
+.pmp-profile-dad b{color:#698dac}
+.pmp-profile-dad small{color:#93a9c2}
+.pmp-profile-dad .pmp-profile-icon{background:#dfedff}
+.pmp-pin-entry{background:linear-gradient(135deg,#fff,#fbfaff);border-radius:20px;border:1px solid #eee7f0;padding:17px 15px 14px}
+.pmp-pin-caption{text-align:center;letter-spacing:1.7px;font:700 9px 'DM Sans',sans-serif;color:#afa0b3;margin:2px 0 12px}
+.pmp-pin-input{display:block;max-width:210px;width:100%;height:42px;margin:0 auto;color:#66757a!important;border:1px solid #ece4ef!important;border-radius:12px!important;text-align:center!important;letter-spacing:9px!important;font-size:20px!important;background:#fff!important}
+.pmp-pin-dots{display:flex;gap:10px;justify-content:center;margin:11px auto 16px}
+.pmp-pin-dot{width:10px;height:10px;border-radius:50%;background:#f1e8f0;border:1px solid #e2d9e6;transition:.12s}
+.pmp-pin-dot.filled{background:#b996b7;border-color:#b996b7;transform:scale(1.08)}
+.pmp-pin-confirm{display:grid;gap:6px;margin:0 0 14px}
+.pmp-pin-confirm label{font-size:11px;color:#8e8ba0;font-weight:600}
+.pmp-pin-confirm input{height:43px;border-radius:13px;padding:10px 13px;font-size:17px;letter-spacing:7px;text-align:center;background:#fff}
+.pmp-keypad{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;max-width:270px;margin:0 auto 14px}
+.pmp-keypad button{min-height:45px;border:1px solid #f0e8f1;border-radius:14px;background:#fff;color:#667480;font:700 17px 'DM Sans',sans-serif;cursor:pointer;box-shadow:0 2px 4px #88718d0a}
+.pmp-keypad button:active{transform:scale(.96);background:#f3eafa}
+.pmp-keypad .pmp-keypad-alt{background:#f9f4fa;color:#a88baf}
+.pmp-keypad svg{width:17px;height:17px;margin:auto}
+.pmp-pin-submit{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;min-height:44px;border-radius:14px!important;background:#829f91!important;border-color:#829f91!important;font-weight:700;font-size:12px!important}
+.pmp-pin-submit:disabled{opacity:.5;cursor:not-allowed}
+.pmp-pin-error{margin:12px 0 0;color:#ab5f77;font-size:11px;line-height:1.6;text-align:center}
+.pmp-pin-footer{display:flex;justify-content:center;align-items:flex-start;gap:7px;font-size:10px;color:#9d9aa8;line-height:1.6;text-align:center;margin:16px 4px 0}
+.pmp-pin-footer svg{height:14px;width:14px;flex:none}
+.pmp-pin-recover{margin:12px auto 0;display:flex;justify-content:center;gap:7px;color:#9688a8;font-size:11px;max-width:100%}
+.pmp-pin-recover svg{height:14px;width:14px}
+.pmp-pin-visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.pmp-passkey-settings{display:flex;gap:12px;align-items:flex-start;flex-wrap:wrap;background:linear-gradient(125deg,#f2f9f5,#f8f4ff);border:1px solid #e5eeea;border-radius:16px;margin-top:15px;padding:13px}
+.pmp-passkey-settings>div{flex:1;min-width:140px}
+.pmp-passkey-settings>div>svg{height:18px;width:18px;color:#91aa97;vertical-align:middle;margin-right:4px}
+.pmp-passkey-settings strong{font-size:11px;color:#6e8179;line-height:1.5}
+.pmp-passkey-settings p{font-size:10px;color:#95a6a0;line-height:1.7;margin:8px 0 0}
+.pmp-passkey-settings button{min-height:36px;font-size:10px;white-space:nowrap}
+@media(max-width:480px){.pmp-auth-card,.pmp-pin-card{padding:25px 18px!important;border-radius:25px!important}.pmp-pin-entry{padding:14px 12px}.pmp-keypad button{min-height:43px}.pmp-pin-title{font-size:24px}.pmp-auth-title{font-size:27px}}
+@media(prefers-reduced-motion:reduce){.pmp-profile-choice,.pmp-keypad button{transition:none}}
