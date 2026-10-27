@@ -1,0 +1,14 @@
+/* A small, optional one-time install invitation. All data stays behind Supabase Auth. */
+#pwaInstallRoot { position:fixed; z-index:890; left:16px; right:16px; bottom:calc(89px + env(safe-area-inset-bottom)); pointer-events:none; font-family:Prompt, sans-serif; }
+.pwa-pill { pointer-events:auto; margin:0 auto; max-width:440px; display:flex; align-items:center; gap:11px; padding:11px 12px; border:1px solid #ecdfea; border-radius:22px; color:#425b60; background:linear-gradient(135deg,#fffafa 4%,#fff1f6 58%,#f1f0ff); box-shadow:0 14px 48px rgba(66,56,72,.18); }
+.pwa-pill__icon {width:43px;height:43px;border-radius:13px;object-fit:cover;flex-shrink:0;}
+.pwa-pill__desc {flex:1;min-width:0;line-height:1.42;} .pwa-pill__desc strong {display:block;font-size:12px;color:#425b60;} .pwa-pill__desc small {display:block;color:#7f8994;font-size:10px;margin-top:3px;}
+.pwa-action {background:#557970;color:white;border:0;border-radius:14px;white-space:nowrap;padding:10px 11px;font-size:11px;font-weight:600;font-family:inherit;}
+.pwa-dismiss {background:transparent;border:0;color:#8b8d94;padding:4px;font-size:20px;line-height:1;}
+.pwa-scrim {position:fixed;inset:0;background:rgba(29,35,43,.5);z-index:10001;display:grid;place-items:center;padding:20px;pointer-events:auto;backdrop-filter:blur(5px);}
+.pwa-modal {width:min(410px,100%);border-radius:26px;background:#fffcfa;box-shadow:0 20px 65px #30303a55;padding:25px 22px;color:#4f5963;line-height:1.8;position:relative;}
+.pwa-modal h2 {color:#496c64;margin:6px 0 8px;font-size:19px;} .pwa-modal p,.pwa-modal li{font-size:13px;} .pwa-modal ol {padding-left:23px;} .pwa-modal__icon {width:64px;height:64px;border-radius:19px;}
+.pwa-modal__close {position:absolute;right:17px;top:14px;background:#f7ecf2;color:#6f6b75;font-size:22px;border:0;border-radius:100%;width:34px;height:34px;}
+.pwa-modal__done {display:block;width:100%;text-align:center;margin-top:12px;}
+@media (min-width:821px) {#pwaInstallRoot {bottom:22px;left:auto;right:25px;width:420px;}}
+@media (max-width:560px) {.pwa-pill {gap:8px;} .pwa-pill__icon {height:39px;width:39px;}.pwa-pill__desc small {font-size:9px;} .pwa-action {padding:10px 9px;}}
