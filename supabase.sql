@@ -1,5 +1,5 @@
 -- ============================================================================
--- PREGNANT MANAGER PRO | Supabase Database & Storage | v2.0
+-- PREGNANT MANAGER PRO | Supabase Database & Storage | v7.0
 -- Compatible with the existing Pastel PWA (app.js and config.js).
 -- Run ONCE in Supabase Dashboard > SQL Editor > New Query > Run.
 -- You can re-run to refresh functions and policies without deleting family data.
@@ -219,7 +219,7 @@ begin
   end if;
   if coalesce(p_collection, '') not in
     ('appointments','symptoms','kicks','tasks','photos',
-     'babyLogs','growth','vaccines','postpartumLogs','memories') then
+     'babyLogs','growth','vaccines','postpartumLogs','memories','prenatalVisits','reminders') then
     raise exception 'Unknown journal collection';
   end if;
   if p_item is null or jsonb_typeof(p_item) <> 'object'
@@ -264,7 +264,7 @@ begin
   end if;
   if coalesce(p_collection, '') not in
     ('appointments','symptoms','kicks','tasks','photos',
-     'babyLogs','growth','vaccines','postpartumLogs','memories') then
+     'babyLogs','growth','vaccines','postpartumLogs','memories','prenatalVisits','reminders') then
     raise exception 'Unknown journal collection';
   end if;
   if coalesce(p_item_id, '') = '' or p_patch is null
@@ -317,7 +317,7 @@ begin
   end if;
   if coalesce(p_collection, '') not in
     ('appointments','symptoms','kicks','tasks','photos',
-     'babyLogs','growth','vaccines','postpartumLogs','memories') then
+     'babyLogs','growth','vaccines','postpartumLogs','memories','prenatalVisits','reminders') then
     raise exception 'Unknown journal collection';
   end if;
   if coalesce(p_item_id, '') = '' then

@@ -1,9 +1,9 @@
 // Cache only the public/static app shell. Never cache Supabase responses, family images or health data.
-const CACHE_NAME = 'pmp-public-shell-pwa-v5';
+const CACHE_NAME = 'pmp-public-shell-pwa-v7';
 const CACHE_PREFIX = 'pmp-public-shell-';
 const SHELL = [
   './', './index.html', './app.js', './config.js', './theme-pastel.css',
-  './premium-ui.css', './install-pwa.js', './install-pwa.css', './manifest.webmanifest',
+  './premium-ui.css', './v7-ui.css', './install-pwa.js', './install-pwa.css', './manifest.webmanifest',
   './icon.svg', './assets/icon.svg', './assets/icon-192.png',
   './assets/icon-512.png', './assets/icon-maskable-512.png', './assets/apple-touch-icon.png'
 ];
