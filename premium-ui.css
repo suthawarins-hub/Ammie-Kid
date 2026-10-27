@@ -309,3 +309,47 @@ button:not(:disabled):active{transform:scale(.985)}
   .grid-3>.quick-card:last-child:nth-child(3) h3{margin:0;flex:1}
   .grid-3>.quick-card:last-child:nth-child(3) p{display:none}
 }
+
+.checklist-summary__caption{margin:8px 0 0;color:#97a39e;font-size:11px;line-height:1.7;max-width:320px}
+.checklist-cats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:0 0 18px}
+.checklist-cat{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #efeaf1;border-radius:22px;padding:15px 16px;box-shadow:0 8px 24px #b39db71a}
+.checklist-cat__icon{width:46px;height:46px;flex:none;display:grid;place-items:center;border-radius:15px;background:#f7f1fa;color:#9c82a8}
+.checklist-cat__icon svg{width:22px;height:22px}
+.checklist-cat span{display:block;font:800 9px 'DM Sans',sans-serif;letter-spacing:1.1px;color:#a596ae;text-transform:uppercase;margin-bottom:5px}
+.checklist-cat strong{display:block;font-size:20px;line-height:1.2;color:#55626f}
+.checklist-cat strong small{font-size:11px;color:#97a0ae;font-weight:600}
+.checklist-cat--hospital .checklist-cat__icon{background:#fff0ea;color:#c48976}
+.checklist-cat--baby .checklist-cat__icon{background:#fff0f6;color:#c087ac}
+.checklist-cat--home .checklist-cat__icon{background:#ecf7f0;color:#72a38c}
+.checklist-cat--parent .checklist-cat__icon{background:#eef1ff;color:#7e92c1}
+.checklist-cat--other .checklist-cat__icon{background:#f8f2e8;color:#b5986a}
+.checklist-board{padding-top:23px}
+.task-section+.task-section{margin-top:18px}
+.task-section{border:1px solid #efe8f0;border-radius:24px;padding:18px;background:linear-gradient(180deg,#fff 0%,#fffcfd 100%)}
+.task-section__head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;margin-bottom:12px}
+.task-section__head span{display:block;font:800 9px 'DM Sans',sans-serif;letter-spacing:1.2px;color:#a696a8;text-transform:uppercase;margin-bottom:5px}
+.task-section__head h3{margin:0;font-size:16px;line-height:1.45;color:#53616d}
+.task-section__meta{text-align:right;flex:none}
+.task-section__meta strong{display:block;font-size:18px;color:#5c6974}
+.task-section__meta small{display:block;margin-top:4px;color:#9ba2ae;font-size:10px}
+.task-mini-progress{height:7px;border-radius:999px;background:#f1eef3;overflow:hidden;margin-bottom:14px}
+.task-mini-progress span{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,#f0bfd1,#b5d6c5)}
+.task-stack{display:grid;gap:10px}
+.task-card{display:flex;gap:13px;align-items:center;padding:14px 15px;border:1px solid #efeaf0;border-radius:18px;background:#fff;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.task-card:hover{transform:translateY(-1px);box-shadow:0 10px 18px #b7a2b91c;border-color:#e6dce9}
+.task-card input{width:22px;height:22px;accent-color:#86b8a6;flex:none;cursor:pointer}
+.task-card__body{display:grid;gap:3px;min-width:0;flex:1}
+.task-card__body b{font-size:13px;line-height:1.55;color:#586672;font-weight:600;overflow-wrap:anywhere}
+.task-card__body small{color:#a49dab;font-size:10px;letter-spacing:.4px;text-transform:uppercase}
+.task-card__tick{width:32px;height:32px;flex:none;display:grid;place-items:center;border-radius:12px;background:#f8f2fb;color:#b498be}
+.task-card__tick svg{width:16px;height:16px}
+.task-card.is-done{background:linear-gradient(180deg,#f8fdf9 0%,#fbfffc 100%);border-color:#dfeee4}
+.task-card.is-done .task-card__body b{text-decoration:line-through;color:#90a09a}
+.task-card.is-done .task-card__body small{color:#93ae9f}
+.task-card.is-done .task-card__tick{background:#ebf7ef;color:#6ea489}
+.task-section--hospital{background:linear-gradient(180deg,#fffaf7 0%,#fff 100%)}
+.task-section--baby{background:linear-gradient(180deg,#fff9fc 0%,#fff 100%)}
+.task-section--home{background:linear-gradient(180deg,#f9fefb 0%,#fff 100%)}
+.task-section--parent{background:linear-gradient(180deg,#fafbff 0%,#fff 100%)}
+.task-section--other{background:linear-gradient(180deg,#fffdfa 0%,#fff 100%)}
+@media (max-width: 700px){.checklist-cats{grid-template-columns:1fr}.task-section__head{flex-direction:column}.task-section__meta{text-align:left}}
