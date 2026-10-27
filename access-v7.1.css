@@ -71,3 +71,18 @@
 .pmp-passkey-settings button{min-height:36px;font-size:10px;white-space:nowrap}
 @media(max-width:480px){.pmp-auth-card,.pmp-pin-card{padding:25px 18px!important;border-radius:25px!important}.pmp-pin-entry{padding:14px 12px}.pmp-keypad button{min-height:43px}.pmp-pin-title{font-size:24px}.pmp-auth-title{font-size:27px}}
 @media(prefers-reduced-motion:reduce){.pmp-profile-choice,.pmp-keypad button{transition:none}}
+
+/* v7.2: Last-used parent is the only visible profile on a remembered device. */
+.pmp-remembered-profile{display:flex;flex-direction:column;align-items:center;gap:4px;border:1px solid #f1dfe9;background:linear-gradient(147deg,#fff0f5,#fff9fb);border-radius:24px;padding:17px 12px 15px;margin:22px auto 18px;max-width:270px;box-shadow:0 10px 33px #e1b7ce24}
+.pmp-remembered-profile.is-dad{background:linear-gradient(147deg,#e9f2ff,#fafcff);border-color:#dae6f8;box-shadow:0 10px 33px #a7c0e41b}
+.pmp-single-portrait{width:113px;height:113px;display:grid;place-items:center;background:#ffffffae;border:5px solid #ffffff;border-radius:50%;margin-bottom:7px;box-shadow:0 7px 22px #a9a1b328}
+.pmp-single-portrait svg{max-width:100%;max-height:100%}
+.pmp-profile-label{font:800 9px 'DM Sans',sans-serif;letter-spacing:1.5px;color:#ab88a1}
+.pmp-remembered-profile.is-dad .pmp-profile-label{color:#8b9fbf}
+.pmp-remembered-profile strong{font-size:20px;color:#946e87;margin-top:2px}
+.pmp-remembered-profile.is-dad strong{color:#688baa}
+.pmp-profile-nickname{font-size:13px;color:#a88aa0}
+.pmp-remembered-profile.is-dad .pmp-profile-nickname{color:#829fbc}
+.pmp-remembered-chip{display:inline-flex;align-items:center;gap:5px;color:#8f91a2;background:#fff9;border:1px solid #fff;border-radius:99px;padding:6px 11px;margin-top:9px;font-size:10px}
+.pmp-remembered-chip svg{width:13px;height:13px}
+@media(max-width:480px){.pmp-remembered-profile{margin:17px auto 15px;padding:12px 10px}.pmp-single-portrait{height:100px;width:100px}.pmp-single-portrait svg{height:90px;width:90px}}

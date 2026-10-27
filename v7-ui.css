@@ -107,3 +107,41 @@
 @media print{body{background:#fff!important}body>*:not(#pmpPrintRoot){display:none!important}#pmpPrintRoot{display:block!important;position:static!important}.v7-print{display:block!important;font-family:Arial,sans-serif!important;color:#222;font-size:11pt;padding:10mm}.v7-print h1{font-size:18pt}.v7-print h2{font-size:14pt;margin-top:18px}.v7-print table{border-collapse:collapse;width:100%;margin-top:10px}.v7-print th,.v7-print td{border:1px solid #aaa;padding:7px;text-align:left;vertical-align:top;word-break:break-word}.v7-print tr{break-inside:avoid}#pmpPrintRoot{display:block}}
 
 .v7-ics{border:1px solid #f0e5f1;background:#fff;border-radius:10px;padding:6px;color:#a88cad}.v7-ics svg{width:16px;height:16px}.photo-tile{position:relative}.v7-photo-open{position:absolute;z-index:2;top:7px;right:7px;border:0;background:#ffffffeb;color:#a782a2;border-radius:10px;width:30px;height:30px;display:grid;place-items:center}.v7-photo-open svg{height:16px;width:16px}
+
+/* v7.3 • confirmed-sex selection with a single canonical name across the family journal */
+.baby-gender-select{padding:17px;border-radius:19px;background:linear-gradient(130deg,#fff9fd,#f7f4ff);border:1px solid #eee3f3;margin-bottom:12px}
+.baby-gender-select__head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px;color:#a880ac}
+.baby-gender-select__head strong{display:block;color:#655e78;font-size:13px}
+.baby-gender-select__head small{display:block;color:#9a8ca4;font-size:10px;line-height:1.7;margin-top:4px}
+.baby-gender-select__head svg{width:22px;height:22px;flex:none}
+.baby-gender-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+.baby-gender-options button{min-width:0;display:flex;align-items:center;justify-content:center;gap:7px;padding:12px 7px;border:1px solid #e9e2ee;border-radius:13px;background:#fff;color:#8b879c;font-size:11px;font-weight:700;cursor:pointer;transition:background .16s,border-color .16s,transform .16s}
+.baby-gender-options button:hover{transform:translateY(-1px);border-color:#c9b6dd}
+.baby-gender-options button svg{height:15px;width:15px;flex:none}
+.baby-gender-options button.is-active{border:2px solid #ac97c4;color:#806993;background:#f4eefd;padding:11px 6px}
+.baby-gender-options button.is-active.girl{background:#ffeaf3;border-color:#d59bbb;color:#a87496}
+.baby-gender-options button.is-active.boy{background:#e6f1ff;border-color:#9bbad9;color:#6b94b9}
+.baby-selected-name{padding:16px 17px;margin-bottom:13px;border-radius:19px;background:linear-gradient(110deg,#fff0f5,#fff9fb);border:1px solid #f0dce6}
+.baby-selected-name.boy{background:linear-gradient(110deg,#eaf3ff,#fafcff);border-color:#dce9fb}
+.baby-selected-name>span{display:flex;align-items:center;gap:7px;font-size:11px;color:#a87e99;font-weight:700}
+.baby-selected-name>span svg{width:16px;height:16px}
+.baby-selected-name>strong{display:block;font-size:26px;line-height:1.6;color:#a97598;margin-top:4px;font-weight:800}
+.baby-selected-name.boy>strong{color:#668fb5}
+.baby-selected-name>div{font-size:11px;color:#987d95;line-height:1.65;overflow-wrap:anywhere}
+.baby-selected-name.boy>div{color:#7a93ab}
+.baby-selected-name>small{display:block;font-size:10px;margin-top:9px;color:#938a9c;line-height:1.6}
+.baby-selected-name.unknown{font-size:11px;line-height:1.7;display:flex;align-items:center;gap:9px;background:#f7f5fa;border-color:#eae6f1;color:#958aa3}
+.baby-selected-name.unknown svg{width:17px;height:17px;flex:none}
+.baby-name.is-selected{outline:2px solid #dab2c9;outline-offset:1px;box-shadow:0 12px 25px #c09db324}
+.baby-name--boy.is-selected{outline-color:#9fc2e5;box-shadow:0 12px 25px #a4c0df24}
+.baby-name.is-inactive{opacity:.63}
+.baby-hero-name{display:inline-flex;gap:8px;align-items:center;background:#fff9;border:1px solid #fff9;border-radius:999px;padding:8px 12px;margin-bottom:12px;color:#5d6675}
+.baby-hero-name>svg{width:15px;height:15px;flex:none;color:#ba7998}
+.baby-hero-name>span{font-weight:800;font-size:13px}
+.baby-hero-name>small{font-size:11px;color:#8c7d9a}
+.baby-gender-prompt{padding:13px 17px;border:1px solid #e9e4f2;background:linear-gradient(110deg,#f9f1fa,#f3f8ff);border-radius:18px;display:flex;align-items:center;gap:10px;color:#816f91;font-size:11px;line-height:1.7;margin:0 0 18px}
+.baby-gender-prompt>svg{width:19px;height:19px;flex:none}
+.baby-gender-prompt>span{flex:1}
+.baby-gender-prompt button{border:0;background:#fff;color:#9277a5;border-radius:12px;font-size:11px;padding:10px 13px;font-weight:800;white-space:nowrap;cursor:pointer}
+.baby-gender-prompt button svg{height:12px;width:12px;vertical-align:middle}
+@media (max-width:620px){.baby-gender-prompt{flex-wrap:wrap}.baby-gender-prompt button{margin-left:26px}.baby-gender-options button{font-size:10px;gap:4px;padding:10px 4px}.baby-gender-options button.is-active{padding:9px 3px}.baby-selected-name>strong{font-size:23px}}
